@@ -9,7 +9,7 @@ import UIKit
 
 final class MainViewController: UITableViewController {
     
-    let persons = Person.getContacts()
+    var persons: [Person]!
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         persons.count
